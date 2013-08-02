@@ -12,7 +12,7 @@ describe "hotels/_form.html.erb" do
     @doc = Nokogiri::HTML(rendered)
   end
 
-  it "foos" do
+  it "has a single h5 element" do
     expect(@doc.css("h5").size).to eq(1)
   end
 end
